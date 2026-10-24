@@ -1,6 +1,7 @@
 import * as baileys from 'baileys'
 import { Client, Config } from '@neoxr/wb'
 import fs from 'fs'
+import handler from './handler.js'
 
 const { version } = await baileys.fetchLatestWaWebVersion()
 
@@ -36,5 +37,7 @@ const sok = new Client({
 sok.on('connect', () => console.log('[ ENGINE ] ' + ' Menyambungkan ke WS'))
 sok.on('error', error => console.log('[ ENGINE ]  ' + error))
 sok.on('ready', () => console.log('[ ENGINE ] ' + ' Bot Siap Digunakan !'))
-sok.on('message', ctx => console.log(ctx))
+sok.on('message', ctx =>{
+handler(ctx, sok).catch('[ ENGINE ]  ' + console.error)
+})
 

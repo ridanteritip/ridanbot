@@ -4,6 +4,11 @@
         "name": "ridan",
         "botName": "ridan"
     },
+    "start": "../index.js",
+    "prefix": [ ".", "!" ],
+    "restart": {
+        "time": 1
+    },
     "pairing": {
         "database": "local",
         "useQR": true,
