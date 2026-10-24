@@ -1,0 +1,16 @@
+{
+    "owner": {
+        "number": "62xx",
+        "name": "ridan",
+        "botName": "ridan"
+    },
+    "pairing": {
+        "database": "local",
+        "useQR": true,
+        "number": "",
+        "code": "RIDANNNN"
+    },
+    "keys": {
+
+    }
+}
