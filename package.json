@@ -1,5 +1,8 @@
 {
     "name": "2",
+    "scripts": {
+        "start": "node --no-warnings library/autorestart.js"
+    },
     "dependencies": {
         "@neoxr/wb": "latest",
         "axios": "latest",
